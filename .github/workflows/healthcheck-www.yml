@@ -1,14 +1,14 @@
-name: "Health Check - www"
+name: "www"
 
 on:
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: "* * * * *"
 
 jobs:
   healthcheck:
     runs-on: ubuntu-latest
     steps:
-      - name: Release API Health Check
+      - name: Health Check - WWW
         uses: jtalk/url-health-check-action@v4
         with:
           # Check the following URLs one by one sequentially
