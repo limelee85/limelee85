@@ -2,7 +2,7 @@ name: "www"
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "0 */1 * * *"
 
 jobs:
   healthcheck:
